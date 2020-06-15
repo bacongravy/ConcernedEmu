@@ -34,25 +34,21 @@ jobs:
         run: |
           fastlane run build_app
 
-      - name: "Upload artifact (log)"
+      - name: "Upload build artifacts"
         uses: actions/upload-artifact@v2
         with:
           name: "build.log"
           path: "~/Library/Logs/gym/*.log"
 
-      - name: "Upload artifact (app)"
+      - name: Upload release assets
         if: success() && startsWith(github.ref, 'refs/tags/v')
-        uses: actions/upload-artifact@v2
+        uses: softprops/action-gh-release@v1
         with:
-          name: "${{ env.PRODUCT_NAME }}.ipa"
-          path: "${{ env.PRODUCT_NAME }}.ipa"
-
-      - name: "Upload artifact (debugging symbols)"
-        if: success() && startsWith(github.ref, 'refs/tags/v')
-        uses: actions/upload-artifact@v2
-        with:
-          name: "${{ env.PRODUCT_NAME }}.app.dSYM.zip"
-          path: "${{ env.PRODUCT_NAME }}.app.dSYM.zip"
+          files: |
+            "${{ env.PRODUCT_NAME }}.ipa"
+            "${{ env.PRODUCT_NAME }}.app.dSYM.zip"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload app to App Store Connect
         if: success() && startsWith(github.ref, 'refs/tags/v')
