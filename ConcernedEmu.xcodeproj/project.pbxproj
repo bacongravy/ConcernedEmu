@@ -27,7 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A4F020062495EB99004AD548 /* ConcernedEmu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcernedEmu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4F020062495EB99004AD548 /* Concerned Emu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Concerned Emu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F020092495EB99004AD548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4F0200B2495EB99004AD548 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A4F0200D2495EB99004AD548 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		A4F020072495EB99004AD548 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A4F020062495EB99004AD548 /* ConcernedEmu.app */,
+				A4F020062495EB99004AD548 /* Concerned Emu.app */,
 				A4F0201C2495EB9B004AD548 /* ConcernedEmuUITests.xctest */,
 			);
 			name = Products;
@@ -124,7 +124,7 @@
 			);
 			name = ConcernedEmu;
 			productName = ConcernedEmu;
-			productReference = A4F020062495EB99004AD548 /* ConcernedEmu.app */;
+			productReference = A4F020062495EB99004AD548 /* Concerned Emu.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A4F0201B2495EB9B004AD548 /* ConcernedEmuUITests */ = {
@@ -373,7 +373,7 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.bacongravy.ConcernedEmu;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Concerned Emu";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -396,7 +396,7 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.bacongravy.ConcernedEmu;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Concerned Emu";
 				PROVISIONING_PROFILE_SPECIFIER = Wildcard;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
