@@ -41,7 +41,7 @@ jobs:
           path: "~/Library/Logs/gym/*.log"
 
       - name: Upload release assets
-        if: success() && startsWith(github.ref, 'refs/tags/v')
+        if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v1
         with:
           files: |
@@ -51,7 +51,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload app to App Store Connect
-        if: success() && startsWith(github.ref, 'refs/tags/v')
+        if: startsWith(github.ref, 'refs/tags/v')
         env:
           APP_STORE_CONNECT_USERNAME: ${{ secrets.APP_STORE_CONNECT_USERNAME }}
           APP_STORE_CONNECT_PASSWORD: ${{ secrets.APP_STORE_CONNECT_PASSWORD }}
