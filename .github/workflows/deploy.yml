@@ -34,7 +34,7 @@ jobs:
         run: |
           fastlane run build_app
 
-      - name: "Upload build artifacts"
+      - name: Upload build artifacts
         uses: actions/upload-artifact@v2
         with:
           name: build.log
