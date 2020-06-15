@@ -2,7 +2,7 @@
 
 This project demonstrates how to use GitHub Actions to deploy iOS app releases to App Store Connect.
 
-View the workflow [here](.github/workflows/master_deploy.yml).
+View the workflow [here](.github/workflows/deploy.yml).
 
 ## Acknowledgements
 
